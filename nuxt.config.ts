@@ -1,3 +1,5 @@
+import NuxtImage from '@nuxt/image'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	compatibilityDate: '2025-07-15',
@@ -11,11 +13,11 @@ export default defineNuxtConfig({
 		'@nuxt/ui',
 		'@nuxt/content',
 		'@nuxtjs/mdc',
-		'@nuxt/image',
+		NuxtImage,
 	],
 
 	app: {
-		baseURL: '/suemmern/',
+		baseURL: process.env.NUXT_APP_BASE_URL ?? '/',
 		head: {
 			title: 'Sportfreunde Sümmern e.V.',
 			htmlAttrs: {

@@ -29,6 +29,7 @@ const excerpt = computed(() => {
 		:description="excerpt"
 		:badge="props.badge"
 		variant="subtle"
+		hydrate-never
 	>
 		<template #footer>
 			<div class="grow-1 w-full" />

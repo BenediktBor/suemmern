@@ -20,7 +20,7 @@ const { data: page } = await useAsyncData(`${route.path}.page`, () => {
 })
 
 const { data: teams, refresh: refreshPosts } = await useAsyncData(
-	`${route.path}.teams`,
+	`${route.path}.${categoryFilter.value}.teams`,
 	() => {
 		const builder = queryCollection('teams')
 

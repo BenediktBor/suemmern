@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { type ButtonProps, type PageFeatureProps } from '@nuxt/ui'
+import { type ButtonProps } from '@nuxt/ui/components/Button.vue'
+import { type PageFeatureProps } from '@nuxt/ui/components/PageFeature.vue'
 
 const props = defineProps<{
 	title: string

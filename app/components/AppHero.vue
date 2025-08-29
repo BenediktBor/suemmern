@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import AppLogo from '~/components/AppLogo.vue'
-import { type ButtonProps } from '@nuxt/ui'
+import { type ButtonProps } from '@nuxt/ui/components/Button.vue'
 
 const props = defineProps<{
 	title: string

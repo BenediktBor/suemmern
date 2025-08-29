@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { NuxtLink } from '#components'
-import type { NavigationMenuItem } from '@nuxt/ui'
+import type { NavigationMenuItem } from '@nuxt/ui/components/NavigationMenu.vue'
 
 const route = useRoute()
 

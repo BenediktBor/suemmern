@@ -186,8 +186,6 @@ const items = computed<NavigationMenuItem[]>(() => [
 
 		<template #right>
 			<UColorModeButton />
-
-			<UContentSearchButton />
 		</template>
 	</UHeader>
 </template>

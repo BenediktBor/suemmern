@@ -26,6 +26,7 @@ export default defineNuxtConfig({
 	},
 
 	image: {},
+	site: { url: 'https://benediktbor.github.io/suemmern/' },
 	content: {
 		experimental: {
 			// sqliteConnector: 'native',

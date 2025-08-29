@@ -1,5 +1,3 @@
-import NuxtImage from '@nuxt/image'
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	compatibilityDate: '2025-07-15',
@@ -13,7 +11,7 @@ export default defineNuxtConfig({
 		'@nuxt/ui',
 		'@nuxt/content',
 		'@nuxtjs/mdc',
-		NuxtImage,
+		'@nuxt/image',
 	],
 
 	app: {
@@ -29,7 +27,7 @@ export default defineNuxtConfig({
 	image: {},
 	content: {
 		experimental: {
-			sqliteConnector: 'native',
+			// sqliteConnector: 'native',
 		},
 	},
 })

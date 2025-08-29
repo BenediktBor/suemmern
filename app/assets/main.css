@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+@source inline("float-left float-right inline");
+
+:root {
+}
+
+.light {
+	--ui-primary: #367714;
+}
+
+.dark {
+}

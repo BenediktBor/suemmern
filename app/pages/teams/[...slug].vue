@@ -47,11 +47,11 @@ const { data: team, refresh } = await useAsyncData(
 	}
 )
 const seoTitle = computed(
-	() => `${team.value.name} - Sportfreunde Sümmern e.V.`
+	() => `${team.value?.name} - Sportfreunde Sümmern e.V.`
 )
 const seoDescription = computed(
 	() =>
-		`${team.value.name} der Sportfreunde Sümmern: Infos zu Trainingszeiten, Trainern, Ergebnissen und Spielen im Kreis Iserlohn. Jetzt Team entdecken!`
+		`${team.value?.name} der Sportfreunde Sümmern: Infos zu Trainingszeiten, Trainern, Ergebnissen und Spielen im Kreis Iserlohn. Jetzt Team entdecken!`
 )
 useSeoMeta({
 	title: seoTitle,
@@ -61,7 +61,7 @@ useSeoMeta({
 })
 
 const practiceTimes = computed(() => {
-	return (team.value.practice ?? []).map((practice) => ({
+	return (team.value?.practice ?? []).map((practice) => ({
 		title: practice.day,
 		description: practice.time,
 		icon: 'i-lucide-clock',

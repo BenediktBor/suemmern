@@ -4,6 +4,8 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 	css: ['./app/assets/main.css'],
 
+	nitro: { preset: 'github-pages' },
+
 	modules: [
 		'@nuxt/image',
 		'@nuxt/scripts',
@@ -13,6 +15,7 @@ export default defineNuxtConfig({
 	],
 
 	app: {
+		baseURL: '/suemmern/',
 		head: {
 			title: 'Sportfreunde Sümmern e.V.',
 			htmlAttrs: {

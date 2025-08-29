@@ -88,6 +88,9 @@ const links = computed(() => {
 					class="w-64"
 					:required="false"
 					placeholder="Team auswählen..."
+					:searchInput="{
+						placeholder: 'Suche...',
+					}"
 					:items="teams?.map((team) => team.name)"
 					:modelValue="teamFilter"
 					@update:modelValue="

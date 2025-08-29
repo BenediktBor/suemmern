@@ -51,6 +51,9 @@ watch([categoryFilter], () => refreshPosts())
 					class="w-64"
 					:required="false"
 					placeholder="Team auswählen..."
+					:searchInput="{
+						placeholder: 'Suche...',
+					}"
 					:items="['Herren', 'Frauen', 'Jugend', 'Sonstige']"
 					:modelValue="categoryFilter"
 					@update:modelValue="

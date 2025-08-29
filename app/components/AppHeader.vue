@@ -169,9 +169,14 @@ const items = computed<NavigationMenuItem[]>(() => [
 </script>
 
 <template>
-	<UHeader>
+	<UHeader :ui="{ title: 'items-center gap-2' }">
 		<template #title>
 			<AppLogo class="h-12" />
+
+			<span class="max-lg:flex hidden xl:flex flex-col">
+				<span class="font-medium relative top-1">Sportfreunde</span>
+				<span class="relative bottom-1">Sümmern e.V.</span>
+			</span>
 		</template>
 
 		<UNavigationMenu :items="items" />

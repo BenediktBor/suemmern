@@ -7,6 +7,7 @@ export default defineNuxtConfig({
 	nitro: { preset: 'github-pages' },
 
 	modules: [
+		'@nuxtjs/seo',
 		'@nuxt/scripts',
 		'@nuxt/ui',
 		'@nuxt/content',

@@ -7,11 +7,11 @@ export default defineNuxtConfig({
 	nitro: { preset: 'github-pages' },
 
 	modules: [
-		'@nuxt/image',
 		'@nuxt/scripts',
 		'@nuxt/ui',
 		'@nuxt/content',
 		'@nuxtjs/mdc',
+		'@nuxt/image',
 	],
 
 	app: {
@@ -24,6 +24,7 @@ export default defineNuxtConfig({
 		},
 	},
 
+	image: {},
 	content: {
 		experimental: {
 			sqliteConnector: 'native',

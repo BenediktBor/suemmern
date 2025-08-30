@@ -100,10 +100,9 @@ watch([categoryFilter], () => refreshPosts())
 							{{ team.name }}
 						</h2>
 					</template>
-					<NuxtPicture
+					<NuxtImg
 						:src="team.image"
 						:alt="`Mannschaftsbild der ${team.name}`"
-						format="avif,webp"
 						class="w-96 rounded-lg"
 						:width="512"
 						:height="288"

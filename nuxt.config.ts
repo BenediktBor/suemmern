@@ -25,7 +25,9 @@ export default defineNuxtConfig({
 		},
 	},
 
-	image: {},
+	image: {
+		format: ['avif', 'webp'],
+	},
 	site: { url: 'https://benediktbor.github.io/suemmern/' },
 
 	content: {

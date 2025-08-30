@@ -34,7 +34,7 @@ const items: NavigationMenuItem[] = [
 				variant="ghost"
 				to="https://instagram.com/sportfreunde_suemmern/"
 				target="_blank"
-				aria-label="Discord"
+				aria-label="Instagram"
 			/>
 			<UButton
 				icon="i-simple-icons-facebook"
@@ -42,7 +42,7 @@ const items: NavigationMenuItem[] = [
 				variant="ghost"
 				to="https://www.facebook.com/sportfreundesuemmern/"
 				target="_blank"
-				aria-label="X"
+				aria-label="Facebook"
 			/>
 			<UButton
 				icon="i-simple-icons-whatsapp"
@@ -50,7 +50,7 @@ const items: NavigationMenuItem[] = [
 				variant="ghost"
 				to="https://whatsapp.com/channel/0029VanrlOqDeON7QPi8XE3o"
 				target="_blank"
-				aria-label="GitHub"
+				aria-label="WhatsApp"
 			/>
 			<UButton
 				icon="i-material-symbols-sports-soccer"
@@ -58,7 +58,7 @@ const items: NavigationMenuItem[] = [
 				variant="ghost"
 				to="https://www.fussball.de/verein/sf-suemmern-westfalen/-/id/00ES8GN8PK00000AVV0AG08LVUPGND5I#!/"
 				target="_blank"
-				aria-label="GitHub"
+				aria-label="fussball.de"
 			/>
 		</template>
 	</UFooter>

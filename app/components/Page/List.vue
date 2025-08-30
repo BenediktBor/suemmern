@@ -3,6 +3,7 @@ const props = defineProps<{
 	image: {
 		src: string
 		alt: string
+		portrait?: boolean
 	}
 	list: {
 		image: {

@@ -12,6 +12,7 @@ description: |
 image:
     src: /media/jugend/leitlinien/bild-1.jpg
     alt: Jugendtraining bei den Sportfreunden Sümmern - Leitlinien für die Jugendarbeit
+    portrait: true
 list: 
     - image: 
         icon: i-lucide-smile
@@ -42,6 +43,7 @@ startIndex: 6
 image:
     src: /media/jugend/leitlinien/bild-2.jpg
     alt: Jugendtraining der Sportfreunde Sümmern - Spieler bei Trainingsübungen
+    portrait: true
 list: 
     - image: 
         icon: i-lucide-thumbs-up

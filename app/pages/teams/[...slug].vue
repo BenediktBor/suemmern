@@ -128,8 +128,12 @@ const links = computed(() => {
 					"
 					:features="practiceTimes.concat(contact)"
 				>
+					<!-- 16:9 image -->
 					<NuxtImg
 						:src="team.image"
+						:width="512"
+						:height="288"
+						:placeholder="[512, 288, 25, 5]"
 						:alt="`Mannschaftsbild der ${team.name}`"
 						class="w-128 rounded-lg shadow-2xl"
 					/>

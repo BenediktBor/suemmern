@@ -52,6 +52,14 @@ const props = defineProps<{
 			:class="{
 				'order-first': props.reverse,
 			}"
+			:width="props.image.portrait ? 288 : 512"
+			:height="props.image.portrait ? 512 : 288"
+			:placeholder="[
+				props.image.portrait ? 288 : 512,
+				props.image.portrait ? 512 : 288,
+				25,
+				5,
+			]"
 			:src="props.image.src"
 			:alt="props.image.alt"
 		/>

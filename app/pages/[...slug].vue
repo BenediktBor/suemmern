@@ -47,6 +47,14 @@ const breadcrumbs = computed(() => {
 					<NuxtImg
 						:src="page.image.src"
 						:alt="page.image.alt"
+						:width="page.image.width ?? 512"
+						:height="page.image.height ?? 288"
+						:placeholder="[
+							page.image.width ?? 512,
+							page.image.height ?? 288,
+							25,
+							5,
+						]"
 						class="w-full object-cover rounded-lg shadow-2xl"
 					/>
 

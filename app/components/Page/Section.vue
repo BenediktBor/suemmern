@@ -6,7 +6,7 @@ const props = defineProps<{
 	title: string
 	headline?: string
 	description?: string
-	image?: { src: string; alt: string }
+	image?: { src: string; alt: string; portrait?: boolean }
 	list?: PageFeatureProps[]
 	links?: ButtonProps[]
 }>()
@@ -30,7 +30,18 @@ const props = defineProps<{
 			v-if="props.image"
 			:src="props.image.src"
 			:alt="props.image.alt"
-			class="w-128 rounded-lg shadow-2xl"
+			:width="props.image.portrait ? 288 : 512"
+			:height="props.image.portrait ? 512 : 288"
+			:placeholder="[
+				props.image.portrait ? 288 : 512,
+				props.image.portrait ? 512 : 288,
+				25,
+				5,
+			]"
+			class="rounded-lg shadow-2xl place-self-center"
+			:class="{
+				'w-128': !props.image.portrait,
+			}"
 		/>
 	</UPageSection>
 </template>

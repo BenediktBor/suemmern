@@ -8,6 +8,8 @@ description: |
 image:
     src: /media/jugend/suemmern-trainer.jpg
     alt: Trainer der Sportfreunde Sümmern - Trainerin oder Trainer werden
+    width: 512
+    height: 512
 features:
     - title: Ausbildung & Unterstützung
       icon: i-lucide-sparkles
@@ -45,6 +47,7 @@ headline: Unser Weg, junge Fußballer zu fördern und zu fordern
 image:
     src: /media/jugend/ballannahme.jpg
     alt: Spieler bei der Ballannahme - Ausbildungskonzept der Sportfreunde Sümmern
+    portrait: true
 description: |
   Bei den Sportfreunden Sümmern legen wir großen Wert auf eine strukturierte und nachhaltige fußballerische Ausbildung.
   Unser Konzept bietet dir als Trainer klare Leitlinien, moderne Trainingsmethoden und Unterstützung in deiner täglichen Arbeit auf dem Platz.
@@ -67,6 +70,7 @@ headline: Der perfekte Trainereinstieg für junge Fußballbegeisterte
 image:
     src: /media/jugend/kapitaen.jpg
     alt: Junger Kapitän seines Teams - Jungtrainer Programm bei den Sportfreunden Sümmern
+    portrait: true
 description: |
   Die Sportfreunde Sümmern binden junge aktuelle und ehemalige Jugendspieler aktiv in Trainerteams der jüngeren Altersstufen als Co-Trainer ein. 
   Die Jungtrainer sollen bei unseren kleinsten Fußballern die Begeisterung für den Fußballsport steigern und sie helfen mit, 

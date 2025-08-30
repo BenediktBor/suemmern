@@ -104,6 +104,9 @@ watch([categoryFilter], () => refreshPosts())
 						:src="team.image"
 						:alt="`Mannschaftsbild der ${team.name}`"
 						class="w-96 rounded-lg"
+						:width="512"
+						:height="288"
+						:placeholder="[512, 288, 25, 5]"
 					/>
 				</UPageCard>
 			</UPageGrid>

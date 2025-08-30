@@ -24,6 +24,7 @@ defineProps<{
 				width="320"
 				height="320"
 				class="rounded-lg"
+				:placeholder="[320, 320, 25, 5]"
 			/>
 
 			<template #body>

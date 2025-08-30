@@ -36,10 +36,13 @@ watch(
 				<h1 class="text-center text-xl font-bold text-pretty mb-2">
 					{{ team.name }}
 				</h1>
-				<NuxtImg 
-					class="h-48 rounded-lg" 
-					:src="team.image" 
-					:alt="`Mannschaftsfoto ${team.name} - Sportfreunde Sümmern`" 
+				<NuxtImg
+					class="w-64 rounded-lg"
+					:src="team.image"
+					:alt="`Mannschaftsfoto ${team.name} - Sportfreunde Sümmern`"
+					:width="512"
+					:height="288"
+					:placeholder="[512, 288, 25, 5]"
 				/>
 			</NuxtLink>
 		</UMarquee>

@@ -46,6 +46,8 @@ export default defineContentConfig({
 					.object({
 						src: z.string(),
 						alt: z.string(),
+						width: z.number().optional(),
+						height: z.number().optional(),
 					})
 					.optional(),
 				features: z.array(card).optional(),
@@ -74,6 +76,8 @@ export default defineContentConfig({
 							src: z.string(),
 							alt: z.string(),
 							title: z.string().optional(),
+							width: z.number().optional(),
+							height: z.number().optional(),
 						})
 					)
 					.optional(),

@@ -17,6 +17,14 @@ const headerImage = computed(() => page.value.images?.[0])
 				<NuxtImg
 					:src="headerImage.src"
 					:alt="headerImage.alt"
+					:width="headerImage.width ?? 512"
+					:height="headerImage.height ?? 288"
+					:placeholder="[
+						headerImage.width ?? 512,
+						headerImage.height ?? 288,
+						25,
+						5,
+					]"
 					class="place-self-center mt-4 w-full object-cover rounded-lg shadow-2xl"
 				/>
 			</div>

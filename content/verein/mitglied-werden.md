@@ -6,6 +6,8 @@ order: 4
 image:
     src: /media/jugend/kreis-vor-spiel.jpg
     alt: Jugendteam im Kreis vor dem Spiel - Mitglied werden bei den Sportfreunden Sümmern
+    width: 512
+    height: 512
 description: |
     Ob Spieler, Trainer oder Unterstützer – als Mitglied der Sportfreunde Sümmern wirst du Teil einer lebendigen Gemeinschaft, in der Fußball, Teamgeist und Zusammenhalt im Mittelpunkt stehen. 
     Gemeinsam fördern wir sportliche Entwicklung, schaffen unvergessliche Erlebnisse auf und neben dem Platz und bieten jedem die Möglichkeit, sich einzubringen und dazuzugehören.

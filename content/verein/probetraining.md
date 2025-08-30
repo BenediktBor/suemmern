@@ -6,6 +6,8 @@ order: 4
 image:
     src: /media/verein/senioren-spieler.jpg
     alt: Senioren-Spieler der Sportfreunde Sümmern - Probetraining beim Fußballverein
+    width: 288
+    height: 512
 description: >
     Du möchtest Teil der Sportfreunde Sümmern werden und Fußball in einem starken Team erleben? 
     Dann ist ein Probetraining der beste Weg, unseren Verein kennenzulernen. 

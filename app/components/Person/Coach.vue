@@ -23,6 +23,9 @@ const props = defineProps<{
 			<div class="w-full grid">
 				<NuxtImg
 					:src="props.image"
+					width="192"
+					height="192"
+					:placeholder="[192, 192, 25, 5]"
 					:alt="`Bild von ${props.name}`"
 					class="rounded-full h-48 w-48 place-self-center"
 				/>

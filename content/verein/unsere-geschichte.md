@@ -4,6 +4,8 @@ title: Unsere Geschichte
 image:
     src: /media/geschichte/gruendung.png
     alt: Historisches Foto der Gründung der Sportfreunde Sümmern von 1956
+    width: 512
+    height: 512
 description: |
     Die Gründungsversammlung der Sportfreunde Sümmern fand am 29.12.1956 im ehemaligen Haus Sondermann in Sümmern statt. Folgende dreizehn Sportkameraden waren die damaligen Gründungsmitglieder: Hermann Beuke, Franz-Josef Bomnüter, Walter Deimann, Ernst Gräbe, Alfons Graf, Theo Hankel, Walter Hennecke, Theo Meier, Fritz Muth, Josef "Bube" Ostermann, Hans Sondermann, Theo Trompetter und Aloys Wissmann. In der ersten Satzung wurde folgendes Ziel festgelegt: "Der Verein betreibt Fußballsport mit dem Zweck, seine Mitglieder durch Leibesübungen und Jugendpflege sittlich und körperlich zu ertüchtigen". In der heutigen Fassung ist dies wie folgt ausgedrückt - "Zweck des Vereins ist die Förderung des Sports sowie der Jugendarbeit". Die offizielle Aufnahme beim Fußball- u. Leichtathletikverband Westfalen e.V. erfolgte im Mai 1957. Damit konnten die Sportfreunde Sümmern e.V. am Spielbetrieb des DFB's teilnehmen.
 icon: i-lucide-book-open

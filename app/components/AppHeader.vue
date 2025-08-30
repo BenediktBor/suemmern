@@ -171,7 +171,17 @@ const items = computed<NavigationMenuItem[]>(() => [
 <template>
 	<UHeader :ui="{ title: 'items-center gap-2' }">
 		<template #title>
-			<AppLogo class="h-12" />
+			<NuxtPicture
+				class="h-12 w-12"
+				width="96"
+				height="96"
+				format="avif,webp"
+				fetchpriority="high"
+				loading="eager"
+				preload
+				src="/logo.png"
+				alt="Logo der Sportfreunde Sümmern e.V."
+			/>
 
 			<span class="max-lg:flex hidden xl:flex flex-col">
 				<span class="font-medium relative top-1">Sportfreunde</span>

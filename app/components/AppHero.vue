@@ -19,8 +19,19 @@ const props = defineProps<{
 		:links="props.links"
 	>
 		<template #headline>
-			<AppLogo class="h-48 w-48 sm:h-64 sm:w-64 mb-4" />
-			<h1 class="text-2xl text-primary font-bold">
+			<NuxtPicture
+				class="h-48 w-48 sm:h-64 sm:w-64"
+				width="192"
+				height="192"
+				format="avif,webp"
+				fetchpriority="high"
+				loading="eager"
+				preload
+				src="/logo.png"
+				alt="Logo der Sportfreunde Sümmern e.V."
+			/>
+
+			<h1 class="mt-4 text-2xl text-primary font-bold">
 				Herzlich Willkommen bei den
 			</h1>
 		</template>

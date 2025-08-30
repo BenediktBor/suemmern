@@ -26,6 +26,8 @@ export default defineNuxtConfig({
 	},
 
 	image: {
+		densities: [1, 2],
+		quality: 80,
 		format: ['avif', 'webp'],
 	},
 	site: { url: 'https://benediktbor.github.io/suemmern/' },

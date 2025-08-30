@@ -38,7 +38,7 @@ watch(
 				</h1>
 				<NuxtImg
 					class="w-96 rounded-lg"
-					format="avif,webp"
+					format="webp"
 					:src="team.image"
 					:alt="`Mannschaftsfoto ${team.name} - Sportfreunde Sümmern`"
 					loading="lazy"

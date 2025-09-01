@@ -1,18 +1,53 @@
 media:
-  input: public/media
-  output: /suemmern/media
+    input: public/media
+    output: /suemmern/media
+components:
+    image:
+        label: Image
+        type: object
+        fields:
+            - name: src
+              label: Image
+              type: image
+              required: true
+            - name: alt
+              label: Image Description
+              type: text
 content:
-  - name: blog
-    label: Blog Post
-    path: content/blog
-    type: collection
-    fields:
-      - name: date
-        label: Date
-        type: date
-      - name: title
-        label: Title
-        type: string
-      - name: body
-        label: Body
-        type: rich-text
+    - name: blog
+      label: Blog Post
+      path: content/blog
+      type: collection
+      view:
+          fields: [title]
+          primary: title
+          sort: [date, title]
+          default:
+              search: ''
+              sort: date
+              order: desc
+      fields:
+          - name: title
+            label: Title
+            type: string
+          - name: description
+            label: Description
+            type: string
+          - name: date
+            label: Date
+            type: date
+          - name: body
+            label: Body
+            type: rich-text
+          - name: team
+            label: Team
+            type: string
+          - name: category
+            label: Category
+            type: select
+            options:
+                values: [Verein, Junioren, Herren, Frauen, Sonstige]
+          - name: images
+            label: Images
+            list: true
+            type: Image

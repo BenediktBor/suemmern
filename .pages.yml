@@ -1,6 +1,6 @@
 media:
     input: public/media
-    output: media
+    output: /media
 components:
     imageObj:
         label: Image

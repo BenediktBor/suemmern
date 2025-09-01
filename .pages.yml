@@ -2,18 +2,53 @@ media:
     input: public/media
     output: /media
 components:
-    imageObj:
-        label: Image
-        type: object
-        fields:
-            - name: src
-              label: Image
-              type: image
-              required: true
-            - name: alt
-              label: Image Description
-              type: text
+    category:
+        label: Kategorie
+        type: select
+        required: true
+        options:
+            values: [Verein, Junioren, Herren, Frauen, Sonstige]
 content:
+    - name: teams
+      label: Teams
+      path: content/teams
+      type: collection
+      format: yaml
+      subfolders: false
+      view:
+          fields: [name, date, category]
+          primary: name
+          sort: [order, name]
+          default:
+              search: ''
+              sort: order
+              order: asc
+      fields:
+          - name: name
+            label: Name
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: string
+            required: true
+          - component: category
+          - name: league
+            label: Spielklasse
+            type: string
+            required: true
+          - name: practice
+            label: Trainingszeiten
+            list: true
+            type: object
+            fields:
+                - name: day
+                  label: Tag(e)
+                  type: string
+                  required: true
+                - name: time
+                  label: Uhrzeit
+                  type: text
     - name: blog
       label: Blog Post
       path: content/blog
@@ -28,28 +63,23 @@ content:
               order: desc
       fields:
           - name: title
-            label: Title
+            label: Titel
             type: string
             required: true
           - name: description
-            label: Description
+            label: Beschreibung
             type: string
             required: true
           - name: date
-            label: Date
+            label: Datum
             type: date
             required: true
           - name: team
             label: Team
             type: string
-          - name: category
-            label: Category
-            type: select
-            required: true
-            options:
-                values: [Verein, Junioren, Herren, Frauen, Sonstige]
+          - component: category
           - name: images
-            label: Images
+            label: Bilder
             list: true
             type: object
             fields:
@@ -58,9 +88,9 @@ content:
                   type: image
                   required: true
                 - name: alt
-                  label: Image Description
+                  label: Bildbeschreibung
                   type: text
           - name: body
-            label: Body
+            label: Artikel
             type: rich-text
             required: true

@@ -23,6 +23,7 @@ defineProps<{
 				:alt="image.alt"
 				width="320"
 				height="320"
+				fit="cover"
 				class="rounded-lg"
 				:placeholder="[320, 320, 25, 5]"
 			/>

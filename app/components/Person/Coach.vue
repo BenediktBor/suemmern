@@ -23,6 +23,7 @@ const props = defineProps<{
 			<div class="w-full grid">
 				<NuxtImg
 					:src="props.image"
+					fit="cover"
 					width="192"
 					height="192"
 					:placeholder="[192, 192, 25, 5]"

@@ -47,6 +47,7 @@ const breadcrumbs = computed(() => {
 					<NuxtImg
 						:src="page.image.src"
 						:alt="page.image.alt"
+						fit="cover"
 						:width="page.image.width ?? 512"
 						:height="page.image.height ?? 288"
 						:placeholder="[

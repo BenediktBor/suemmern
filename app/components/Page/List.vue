@@ -53,6 +53,7 @@ const props = defineProps<{
 			:class="{
 				'order-first': props.reverse,
 			}"
+			fit="cover"
 			:width="props.image.portrait ? 288 : 512"
 			:height="props.image.portrait ? 512 : 288"
 			:placeholder="[

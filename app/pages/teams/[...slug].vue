@@ -131,6 +131,7 @@ const links = computed(() => {
 					<!-- 16:9 image -->
 					<NuxtImg
 						:src="team.image"
+						fit="cover"
 						:width="512"
 						:height="288"
 						:placeholder="[512, 288, 25, 5]"

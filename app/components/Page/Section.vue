@@ -30,6 +30,7 @@ const props = defineProps<{
 			v-if="props.image"
 			:src="props.image.src"
 			:alt="props.image.alt"
+			fit="cover"
 			:width="props.image.portrait ? 288 : 512"
 			:height="props.image.portrait ? 512 : 288"
 			:placeholder="[

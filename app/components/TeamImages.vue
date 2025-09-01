@@ -44,6 +44,7 @@ watch(
 					loading="lazy"
 					:width="512"
 					:height="288"
+					fit="cover"
 					:placeholder="[512, 288, 25, 5]"
 				/>
 			</NuxtLink>

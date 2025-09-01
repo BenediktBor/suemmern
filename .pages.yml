@@ -28,7 +28,7 @@ content:
             required: true
           - name: description
             label: Beschreibung
-            type: string
+            type: text
             required: true
           - name: date
             label: Datum
@@ -50,7 +50,7 @@ content:
                   required: true
                 - name: alt
                   label: Bildbeschreibung
-                  type: text
+                  type: string
           - name: body
             label: Artikel
             type: rich-text
@@ -78,7 +78,7 @@ content:
             type: number
           - name: description
             label: Description
-            type: string
+            type: text
             required: true
           - name: category
             component: category
@@ -98,7 +98,7 @@ content:
                   required: true
                 - name: time
                   label: Uhrzeit
-                  type: text
+                  type: string
                   required: true
           - name: image
             label: Mannschaftsfoto

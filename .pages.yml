@@ -1,6 +1,8 @@
 media:
     input: public/media
     output: /media
+settings:
+    hide: true
 components:
     category:
         label: Kategorie

@@ -9,50 +9,6 @@ components:
         options:
             values: [Verein, Junioren, Herren, Frauen, Sonstige]
 content:
-    - name: teams
-      label: Teams
-      path: content/teams
-      type: collection
-      subfolders: false
-      view:
-          fields: [name, date, category]
-          primary: name
-          sort: [order, name]
-          default:
-              search: ''
-              sort: order
-              order: asc
-      fields:
-          - name: name
-            label: Name
-            type: string
-            required: true
-          - name: description
-            label: Description
-            type: string
-            required: true
-          - component: category
-            required: true
-          - name: league
-            label: Spielklasse
-            type: string
-            required: true
-          - name: practice
-            label: Trainingszeiten
-            list: true
-            type: object
-            fields:
-                - name: day
-                  label: Tag(e)
-                  type: string
-                  required: true
-                - name: time
-                  label: Uhrzeit
-                  type: text
-                  required: true
-          - name: body
-            label: Teaminfo
-            type: rich-text
     - name: blog
       label: Blog Post
       path: content/blog
@@ -98,3 +54,47 @@ content:
             label: Artikel
             type: rich-text
             required: true
+    - name: teams
+      label: Teams
+      path: content/teams
+      type: collection
+      subfolders: false
+      view:
+          fields: [name, date, category]
+          primary: name
+          sort: [order, name]
+          default:
+              search: ''
+              sort: order
+              order: asc
+      fields:
+          - name: name
+            label: Name
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: string
+            required: true
+          - component: category
+            required: true
+          - name: league
+            label: Spielklasse
+            type: string
+            required: true
+          - name: practice
+            label: Trainingszeiten
+            list: true
+            type: object
+            fields:
+                - name: day
+                  label: Tag(e)
+                  type: string
+                  required: true
+                - name: time
+                  label: Uhrzeit
+                  type: text
+                  required: true
+          - name: body
+            label: Teaminfo
+            type: rich-text

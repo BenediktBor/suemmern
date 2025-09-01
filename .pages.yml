@@ -37,7 +37,8 @@ content:
           - name: team
             label: Team
             type: string
-          - component: category
+          - name: category
+            component: category
           - name: images
             label: Bilder
             list: true
@@ -72,11 +73,15 @@ content:
             label: Name
             type: string
             required: true
+          - name: order
+            label: Sortierung
+            type: number
           - name: description
             label: Description
             type: string
             required: true
-          - component: category
+          - name: category
+            component: category
             required: true
           - name: league
             label: Spielklasse

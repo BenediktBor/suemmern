@@ -1,6 +1,6 @@
 media:
     input: public/media
-    output: /suemmern/media
+    output: media
 components:
     imageObj:
         label: Image

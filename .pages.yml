@@ -19,9 +19,9 @@ content:
       path: content/blog
       type: collection
       view:
-          fields: [title]
+          fields: [title, date, category, team]
           primary: title
-          sort: [date, title, category, team]
+          sort: [date, title]
           default:
               search: ''
               sort: date
@@ -30,24 +30,37 @@ content:
           - name: title
             label: Title
             type: string
+            required: true
           - name: description
             label: Description
             type: string
+            required: true
           - name: date
             label: Date
             type: date
+            required: true
           - name: team
             label: Team
             type: string
           - name: category
             label: Category
             type: select
+            required: true
             options:
                 values: [Verein, Junioren, Herren, Frauen, Sonstige]
           - name: images
             label: Images
             list: true
-            type: imageObj
+            type: object
+            fields:
+                - name: src
+                  label: Image
+                  type: image
+                  required: true
+                - name: alt
+                  label: Image Description
+                  type: text
           - name: body
             label: Body
             type: rich-text
+            required: true

@@ -60,7 +60,7 @@ content:
       type: collection
       subfolders: false
       view:
-          fields: [name, date, category]
+          fields: [name, category]
           primary: name
           sort: [order, name]
           default:
@@ -95,6 +95,10 @@ content:
                   label: Uhrzeit
                   type: text
                   required: true
+          - name: image
+            label: Mannschaftsfoto
+            type: image
+            required: true
           - name: body
             label: Teaminfo
             type: rich-text

@@ -51,6 +51,7 @@ content:
                 - name: alt
                   label: Bildbeschreibung
                   type: string
+                  required: true
           - name: body
             label: Artikel
             type: rich-text

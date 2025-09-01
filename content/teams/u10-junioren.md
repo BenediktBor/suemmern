@@ -1,3 +1,4 @@
+---
 name: U10 Junioren
 order: 108
 image: /media/teams/u10-junioren.jpg
@@ -9,3 +10,4 @@ description: |
 practice:
     - day: Dienstag & Donnerstag
       time: 16:30 Uhr - 18:00 Uhr
+---

@@ -13,7 +13,6 @@ content:
       label: Teams
       path: content/teams
       type: collection
-      format: yaml
       subfolders: false
       view:
           fields: [name, date, category]
@@ -33,6 +32,7 @@ content:
             type: string
             required: true
           - component: category
+            required: true
           - name: league
             label: Spielklasse
             type: string
@@ -49,6 +49,10 @@ content:
                 - name: time
                   label: Uhrzeit
                   type: text
+                  required: true
+          - name: body
+            label: Teaminfo
+            type: rich-text
     - name: blog
       label: Blog Post
       path: content/blog

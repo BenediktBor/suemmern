@@ -1,3 +1,4 @@
+---
 name: Minikicker 2
 order: 113
 image: /media/teams/minikicker.jpg
@@ -9,3 +10,4 @@ description: |
 practice:
     - day: Montag & Mittwoch
       time: 16:45 Uhr - 18:15 Uhr
+---

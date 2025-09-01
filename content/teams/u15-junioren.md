@@ -1,3 +1,4 @@
+---
 name: U15 Junioren
 order: 103
 image: /media/teams/u15-junioren.jpg
@@ -11,3 +12,4 @@ practice:
       time: 17:30 Uhr - 19:00 Uhr
     - day: Dienstag & Donnerstag
       time: 18:00 Uhr - 19:30 Uhr
+---

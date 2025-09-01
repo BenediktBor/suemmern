@@ -1,3 +1,4 @@
+---
 name: 1. Herren
 order: 1
 image: /media/teams/erste-herren.jpg
@@ -6,3 +7,4 @@ league: Kreisliga A
 practice:
     - day: Dienstag & Donnerstag
       time: 19:30 Uhr - 21:00 Uhr
+---

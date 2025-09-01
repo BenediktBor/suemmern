@@ -1,3 +1,4 @@
+---
 name: U17 Junioren
 order: 102
 image: /media/teams/u17-junioren.jpg
@@ -11,3 +12,4 @@ practice:
       time: 18:30 Uhr - 20:00 Uhr
     - day: Donnerstag
       time: 18:00 Uhr - 19:30 Uhr
+---

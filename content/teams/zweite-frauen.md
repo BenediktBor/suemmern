@@ -1,3 +1,4 @@
+---
 name: 2. Frauen
 order: 12
 image: '/media/teams/zweite-frauen.jpg'
@@ -8,3 +9,4 @@ practice:
       time: 19:45 Uhr - 21:15 Uhr
     - day: Freitag
       time: 18:15 Uhr - 19:45 Uhr
+---

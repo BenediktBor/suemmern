@@ -1,3 +1,4 @@
+---
 name: U11 Junioren
 order: 107
 image: /media/teams/u11-junioren.jpg
@@ -9,3 +10,4 @@ description: |
 practice:
     - day: Mittwoch & Freitag
       time: 16:45 Uhr - 18:15 Uhr
+---

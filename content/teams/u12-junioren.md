@@ -1,3 +1,4 @@
+---
 name: U12 Junioren
 order: 106
 image: /media/teams/u12-junioren.jpg
@@ -11,3 +12,4 @@ practice:
       time: 16:30 Uhr - 18:00 Uhr
     - day: Freitag
       time: 16:45 Uhr - 18:15 Uhr
+---

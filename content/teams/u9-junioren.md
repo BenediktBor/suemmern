@@ -1,3 +1,4 @@
+---
 name: U9 Junioren
 order: 110
 image: /logo.png
@@ -11,3 +12,4 @@ practice:
       time: 17:00 Uhr - 18:30 Uhr
     - day: Freitag
       time: 16:30 Uhr - 18:00 Uhr
+---

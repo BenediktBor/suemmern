@@ -1,3 +1,4 @@
+---
 name: U13 Junioren
 order: 105
 image: /media/teams/u13-junioren.jpg
@@ -9,3 +10,4 @@ description: |
 practice:
     - day: Mittwoch & Freitag
       time: 16:45 Uhr - 18:15 Uhr
+---

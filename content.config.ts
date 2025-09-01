@@ -102,7 +102,7 @@ export default defineContentConfig({
 		teams: defineCollection({
 			type: 'page',
 			source: {
-				include: 'teams/**/*.{yml,md}',
+				include: 'teams/**/*.md',
 				exclude: ['teams/index.yml'],
 			},
 			schema: z.object({
@@ -125,7 +125,7 @@ export default defineContentConfig({
 		}),
 		teamsIndex: defineCollection({
 			type: 'data',
-			source: 'teams/index.yml',
+			source: 'teams.yml',
 			schema: z.object({
 				...headline,
 			}),

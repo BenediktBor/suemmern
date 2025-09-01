@@ -1,3 +1,4 @@
+---
 name: U14 Junioren
 order: 104
 image: /media/teams/u14-junioren.jpg
@@ -9,3 +10,4 @@ description: |
 practice:
     - day: Dienstag & Donnerstag
       time: 18:00 Uhr - 19:30 Uhr
+---

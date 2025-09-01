@@ -1,3 +1,4 @@
+---
 name: 2. Herren
 order: 2
 image: '/media/teams/zweite-herren.jpg'
@@ -6,3 +7,4 @@ league: 'Kreisliga B'
 practice:
     - day: 'Dienstag & Donnerstag'
       time: '19:30 Uhr - 21:00 Uhr'
+---

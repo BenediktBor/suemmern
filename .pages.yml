@@ -2,7 +2,7 @@ media:
     input: public/media
     output: /suemmern/media
 components:
-    image:
+    imageObj:
         label: Image
         type: object
         fields:
@@ -21,7 +21,7 @@ content:
       view:
           fields: [title]
           primary: title
-          sort: [date, title]
+          sort: [date, title, category, team]
           default:
               search: ''
               sort: date
@@ -36,9 +36,6 @@ content:
           - name: date
             label: Date
             type: date
-          - name: body
-            label: Body
-            type: rich-text
           - name: team
             label: Team
             type: string
@@ -50,4 +47,7 @@ content:
           - name: images
             label: Images
             list: true
-            type: Image
+            type: imageObj
+          - name: body
+            label: Body
+            type: rich-text

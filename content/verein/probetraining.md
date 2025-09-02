@@ -46,9 +46,6 @@ headline: Gebe dein Alter an und finde heraus, welche Mannschaften für dich in 
 description: >
   Egal ob Jugend, Frauen, Herren oder Schiedsrichter – die Sportfreunde Sümmern sind für Fußball in Iserlohn vielfältig aufgestellt. 
   Hier findest du alle Fußballabteilungen im Überblick und kannst mehr über unsere Teams, Aktivitäten und Verantwortlichen erfahren.
-image:
-    src: /media/der-verein.webp
-    alt: Bild der Seniorenspieler der Sportfreunde Sümmern - Fußball und Gemeinschaft in Iserlohn
 ---
 
 ::PageFeatures

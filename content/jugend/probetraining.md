@@ -55,6 +55,17 @@ features:
 3. **Probetraining absolvieren:** Zeige dein Können und lerne unser Team sowie unsere Trainingsmethoden kennen.
 4. **Feedbackgespräch:** Nach dem Training besprechen wir gemeinsam die nächsten Schritte.
 
+::TeamFinder
+---
+category: Jugend
+title: Finde dein Team
+headline: Gebe dein Alter an und finde heraus, welche Mannschaften für dich in Frage kommen
+description: >
+  Von den Minikickern bis zur U19 – die Sportfreunde Sümmern bieten Kinderfußball und Jugendfußball für alle Altersklassen. 
+  Wähle dein Alter und entdecke, in welchem Team du ein Probetraining in unserem Fußballverein in Iserlohn machen kannst.
+---
+::
+
 ::PersonContact
 ---
 name: Peter Kostrzewa

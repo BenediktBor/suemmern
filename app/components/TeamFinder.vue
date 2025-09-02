@@ -6,20 +6,27 @@ const props = defineProps<{
 	description?: string
 	headline?: string
 	links?: Object[]
+	category?: string
 }>()
+const slots = useSlots()
 
 const age = ref(4)
 
 const { data: teams, refresh } = useAsyncData(
-	`teamFinder.allTeams`,
+	`teamFinder.getTeams?category=${props.category ?? 'all'}`,
 	async () => {
 		const queryBuilder = queryCollection('teams')
+
+		if (props.category) queryBuilder.where('category', '=', props.category)
 
 		return await queryBuilder.order('order', 'ASC').all()
 	}
 )
 
-watch(age, () => refresh())
+watch(
+	() => props.category,
+	() => refresh()
+)
 
 const eligibleTeams = computed(() => {
 	return (
@@ -43,7 +50,7 @@ const tabs = ref<TabsItem[]>([
 		value: 'byAge',
 	},
 ])
-const currentTab = ref('overview')
+const currentTab = ref(slots.default ? 'overview' : 'byAge')
 </script>
 
 <template>
@@ -54,6 +61,7 @@ const currentTab = ref('overview')
 		:links="props.links"
 	>
 		<UTabs
+			v-if="$slots.default"
 			v-model="currentTab"
 			:items="tabs"
 			variant="pill"
@@ -67,7 +75,11 @@ const currentTab = ref('overview')
 		</template>
 		<template v-else-if="currentTab === 'byAge'">
 			<UFormField label="Alter">
-				<UInputNumber v-model="age" :min="4" :max="99" />
+				<UInputNumber
+					v-model="age"
+					:min="4"
+					:max="category === 'Jugend' ? 18 : 99"
+				/>
 			</UFormField>
 
 			<UPageGrid class="mt-4">

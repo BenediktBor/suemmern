@@ -26,7 +26,6 @@ features:
       to: /jugend/ausbildung/
 cta:
     icon: i-fluent-emoji-high-contrast-soccer-ball
-    trailingIcon: i-lucide-arrow-right
     label: Jetzt Probetraining sichern
     to: /jugend/probetraining/
 ---

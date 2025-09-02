@@ -1,7 +1,13 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
 	images: { src: string; title?: string; alt?: string }[]
 }>()
+
+const getImgUrl = useImage()
+
+props.images.forEach(({ src }) => {
+	getImgUrl(src)
+})
 </script>
 
 <template>
@@ -25,6 +31,7 @@ defineProps<{
 				height="320"
 				fit="cover"
 				class="rounded-lg"
+				loading="lazy"
 				:placeholder="[320, 320, 25, 5]"
 			/>
 

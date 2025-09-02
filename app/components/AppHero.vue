@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { type ButtonProps } from '@nuxt/ui/components/Button.vue'
+import { set } from '@nuxt/ui/runtime/utils/index.js'
 
 const props = defineProps<{
 	title: string
@@ -7,6 +8,8 @@ const props = defineProps<{
 	description: string
 	links?: ButtonProps[]
 }>()
+
+const isVideoPlaying = ref(import.meta.env.SSR ? true : false) // Assume video is playing on server-side to avoid blur being added to element by default
 </script>
 
 <template>
@@ -34,22 +37,22 @@ const props = defineProps<{
 				Herzlich Willkommen bei den
 			</h1>
 		</template>
-		<!-- <template #title>
-				<div class="inline-flex items-center gap-4">
-					<AppLogo linkClass="shrink-0 " class="h-24 w-24" />
-					<span class="shrink">Sportfreunden Sümmern e.V.</span>
-				</div>
-			</template> -->
+
 		<template #default>
 			<div class="place-self-center">
 				<video
-					class="object-cover h-max max-h-164 rounded-lg shadow-2xl"
+					class="object-cover h-max max-h-164 rounded-lg shadow-2xl transition-all duration-300 ease-in-out"
+					:class="{ 'blur-xs': !isVideoPlaying }"
+					width="369"
+					height="656"
 					src="/media/intro.mp4"
 					muted
 					loop
 					autoplay
 					playsinline
-					poster="/media/intro-poster.png"
+					poster="/media/intro-poster.webp"
+					preload="metadata"
+					@play="isVideoPlaying = true"
 				/>
 
 				<div class="mt-2 text-center text-dimmed font-extralight">

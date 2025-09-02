@@ -50,7 +50,7 @@ description: >
   Ob du neu im Fußball bist, wieder einsteigen oder einfach Teil einer aktiven Vereinsfamilie werden möchtest – bei uns findest du den richtigen Platz. 
   Wir legen großen Wert auf Teamgeist, Fairplay und individuelle Förderung und heißen Spieler, Eltern und Interessierte aus Iserlohn, Hemer, Menden, Hagen und Umgebung herzlich willkommen.
 image:
-    src: /media/der-verein.jpg
+    src: /media/der-verein.webp
     alt: Bild der Seniorenspieler der Sportfreunde Sümmern - Fußball und Gemeinschaft in Iserlohn
 links:
   - icon: i-heroicons-user-group
@@ -73,6 +73,11 @@ description: >
 image:
     src: /media/anlage/aussen-1.jpg
     alt: Sportanlage der Sportfreunde Sümmern - zentral in Iserlohn gelegen
+list:
+    - title: Unser Platz
+      icon: i-mdi-football-pitch
+      description: |
+          5-12 Minuten aus Iserlohn, Menden und Hemer
 links:
   - icon: i-lucide-home
     trailingIcon: i-lucide-arrow-right
@@ -84,6 +89,52 @@ links:
 
 ::PageSection
 ---
+title: Spielerisch lernen
+headline: Ball, Spielformen und Freude für die Jüngsten
+image:
+    src: /media/jugend/gruppe-junger-fussballer.jpg
+    alt: Jugendteam nach dem Spiel - Antworten zum Kinder- und Jugendfussball in Sümmern
+description: >
+    Bei uns steht der Ball im Mittelpunkt: viele Ballaktionen, kreative Spielformen und spielnahe Entscheidungen sorgen dafür, 
+    dass Kinder häufig am Ball sind und mit Spaß technisches und spielerisches Können entwickeln. 
+    In kleinen, wertschätzenden Teams fördern geschulte Trainerinnen und Trainer Mut, Eigeninitiative und Teamgeist — Fehler gelten bei uns als Lernchance.
+---
+::
+
+::PageSection
+---
+reverse: true
+title: Talent fördern
+headline: Individuelle Entwicklung mit Athletik- und Spezialtraining
+image:
+    src: /media/jugend/fussballer-jubeln.jpg
+    alt: Jugendteam nach dem Spiel - Antworten zum Kinder- und Jugendfussball in Sümmern
+description: >
+    Ab der U13 begleiten wir Jugendliche dabei, ihre Fähigkeiten Schritt für Schritt auszubauen. 
+    Im Mittelpunkt stehen Balltechnik, Spielformen, Teamgeist und altersgerechte Bewegungsschulung. 
+    Ergänzend gibt es Torwarttraining und abwechslungsreiche Athletikübungen, die Spaß machen und fit halten. 
+    So können Spielerinnen und Spieler in Iserlohn ihr Talent ohne Leistungsdruck entfalten.
+---
+::
+
+::PageSection
+---
+title: Girls welcome
+headline: Mädchenfußball in Iserlohn, Menden und Hemer
+image:
+    src: /media/jugend/spielerin.jpg
+    alt: Jugendteam nach dem Spiel - Antworten zum Kinder- und Jugendfussball in Sümmern
+description: >
+    Fußball ist für alle da – deshalb gibt es bei uns in Sümmern eigene Angebote für Mädchen- und Frauenfußball. Egal ob Anfängerin oder erfahrene Spielerin: 
+    wir bieten ein sicheres, förderndes Umfeld mit direkter Ansprechperson für Probetraining und Einstieg. 
+    Mit Ballorientierung, Spielformen und positiver Lernkultur profitieren auch Mädchen von unserem modernen Ausbildungskonzept im Iserlohner Kinder- und Jugendfußball.
+---
+::
+
+::PageSection
+---
+reverse: true
+
 title: Häufige Fragen
 headline: Antworten zu unserem Fußballverein in Iserlohn
 image:

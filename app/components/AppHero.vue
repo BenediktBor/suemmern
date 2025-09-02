@@ -10,6 +10,17 @@ const props = defineProps<{
 }>()
 
 const isVideoPlaying = ref(import.meta.env.SSR ? true : false) // Assume video is playing on server-side to avoid blur being added to element by default
+
+useHead({
+	link: [
+		{
+			rel: 'preload',
+			as: 'image',
+			href: '/media/intro-poster.webp',
+			fetchpriority: 'high',
+		},
+	],
+})
 </script>
 
 <template>
@@ -51,7 +62,8 @@ const isVideoPlaying = ref(import.meta.env.SSR ? true : false) // Assume video i
 					autoplay
 					playsinline
 					poster="/media/intro-poster.webp"
-					preload="metadata"
+					preload="none"
+					loading="lazy"
 					@play="isVideoPlaying = true"
 				/>
 

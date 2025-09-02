@@ -22,7 +22,7 @@ reverse: true
 title: Ein Verein. Eine Familie.
 headline: Seit 1956 sind die Sportfreunde Sümmern ein Herzstück unserer Dorfgemeinschaft
 image:
-    src: /media/der-verein.jpg
+    src: /media/der-verein.webp
     alt: Sportfreunde Sümmern - Ein Verein, eine Familie seit 1956
 description: |
     Wir sind mehr als nur ein Fußballverein. Mit über 800 Mitgliedern und mehr als 20 Mannschaften stehen wir für Leidenschaft, Zusammenhalt und Tradition. Bei uns wachsen Kinder gemeinsam auf, entwickeln sich sportlich und menschlich – und finden Freunde fürs Leben. Ob Bambinis, Jugend, Senioren oder Alte Herren: Alle Generationen tragen dazu bei, dass unser Verein seit fast 70 Jahren fest im Dorf verwurzelt ist.
@@ -57,6 +57,11 @@ image:
     alt: Außenansicht des Vereinsheims der Sportfreunde Sümmern - zentral im Fußballkreis Iserlohn
 description: |
     Die Sportfreunde Sümmern liegen im Herzen des Fußballkreises Iserlohn – optimal erreichbar aus allen Richtungen. Egal ob aus Iserlohn, Menden oder Hemer: Spielerinnen, Spieler und Eltern schätzen die zentrale Lage unseres Vereinsgeländes und die kurzen Wege. So können wir Talente aus der gesamten Region zusammenbringen – und für Kinder und Jugendliche bleibt genug Zeit für Schule, Freunde und Familie.
+list:
+    - title: Unser Platz
+      icon: i-mdi-football-pitch
+      description: |
+          5-12 Minuten aus Iserlohn, Menden und Hemer
 links:
     - label: Unsere sportliche Heimat
       icon: i-lucide-home

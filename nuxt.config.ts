@@ -24,6 +24,13 @@ export default defineNuxtConfig({
 			},
 		},
 	},
+	site: {
+		name: 'Sportfreunde Sümmern e.V.',
+	},
+	seo: {
+		canonicalLowercase: false,
+		canonicalQueryWhitelist: ['team', 'category'],
+	},
 
 	image: {
 		densities: [1, 2],

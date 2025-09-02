@@ -7,6 +7,7 @@ const seoDescription =
 useSeoMeta({
 	title: seoTitle,
 	ogTitle: seoTitle,
+	titleTemplate: null,
 	description: seoDescription,
 	ogDescription: seoDescription,
 })

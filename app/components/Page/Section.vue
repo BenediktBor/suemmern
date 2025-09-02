@@ -31,6 +31,7 @@ const props = defineProps<{
 			:src="props.image.src"
 			:alt="props.image.alt"
 			fit="cover"
+			loading="lazy"
 			:width="props.image.portrait ? 288 : 512"
 			:height="props.image.portrait ? 512 : 288"
 			:placeholder="[

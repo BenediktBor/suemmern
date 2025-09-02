@@ -2,7 +2,7 @@
 name: U17 Juniorinnen
 order: 13
 image: /media/teams/u17-juniorinnen.jpg
-category: Frauen
+category: Jugend
 league: Bezirksliga
 practice:
     - day: Montag, Mittwoch & Freitag

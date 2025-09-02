@@ -2,7 +2,7 @@
 name: U15 Juniorinnen
 order: 14
 image: /media/teams/u15-juniorinnen.jpg
-category: Frauen
+category: Jugend
 league: Kreisliga
 practice:
     - day: Montag & Mittwoch

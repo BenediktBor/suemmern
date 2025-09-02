@@ -106,28 +106,40 @@ const items = computed<NavigationMenuItem[]>(() => [
 		],
 	},
 	{
-		label: 'Herren',
+		label: 'Senioren',
 		icon: 'i-lucide-users',
-		to: '/teams?category=Herren',
 		active:
-			route.path.endsWith('/teams') && route.query.category === 'Herren',
+			route.path.endsWith('/teams') &&
+			route.query.category === 'Senioren',
+		children: [
+			{
+				label: 'Herren Teams',
+				icon: 'i-heroicons-user-group',
+				to: '/teams?category=Herren',
+				active:
+					route.path.endsWith('/teams') &&
+					route.query.category === 'Herren',
 
-		children: (teams.value?.seniorMale ?? []).map((team) => ({
-			label: team.name,
-			to: team.path,
-		})),
+				children: (teams.value?.seniorMale ?? []).map((team) => ({
+					label: team.name,
+					to: team.path,
+				})),
+			},
+			{
+				label: 'Frauen Teams',
+				icon: 'i-heroicons-user-group',
+				to: '/teams?category=Frauen',
+				active:
+					route.path.endsWith('/teams') &&
+					route.query.category === 'Frauen',
+				children: (teams.value?.female ?? []).map((team) => ({
+					label: team.name,
+					to: team.path,
+				})),
+			},
+		],
 	},
-	{
-		label: 'Frauen',
-		icon: 'i-lucide-users',
-		to: '/teams?category=Frauen',
-		active:
-			route.path.endsWith('/teams') && route.query.category === 'Frauen',
-		children: (teams.value?.female ?? []).map((team) => ({
-			label: team.name,
-			to: team.path,
-		})),
-	},
+
 	{
 		label: 'Jugend',
 		icon: 'i-carbon-pedestrian-child',
@@ -192,6 +204,16 @@ const items = computed<NavigationMenuItem[]>(() => [
 		<UNavigationMenu :items="items" />
 
 		<template #body>
+			<UButton
+				class="mb-4"
+				variant="subtle"
+				size="lg"
+				block
+				icon="i-fluent-emoji-high-contrast-soccer-ball"
+				trailingIcon="i-lucide-arrow-right"
+				label="Jetzt Probetraining vereinbaren"
+				to="/verein/probetraining/"
+			/>
 			<UNavigationMenu
 				orientation="vertical"
 				mode="drawer"
@@ -201,6 +223,14 @@ const items = computed<NavigationMenuItem[]>(() => [
 
 		<template #right>
 			<UColorModeButton />
+			<UButton
+				class="hidden lg:inline-flex"
+				variant="subtle"
+				icon="i-fluent-emoji-high-contrast-soccer-ball"
+				trailingIcon="i-lucide-arrow-right"
+				label="Probetraining"
+				to="/verein/probetraining/"
+			/>
 		</template>
 	</UHeader>
 </template>

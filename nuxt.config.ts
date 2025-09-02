@@ -25,6 +25,7 @@ export default defineNuxtConfig({
 		},
 	},
 	site: {
+		url: 'https://benediktbor.github.io/suemmern/',
 		name: 'Sportfreunde Sümmern e.V.',
 	},
 	seo: {
@@ -37,7 +38,6 @@ export default defineNuxtConfig({
 		quality: 80,
 		format: ['avif', 'webp'],
 	},
-	site: { url: 'https://benediktbor.github.io/suemmern/' },
 
 	content: {
 		experimental: {

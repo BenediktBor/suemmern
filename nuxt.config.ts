@@ -4,7 +4,13 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 	css: ['./app/assets/main.css'],
 
-	nitro: { preset: 'github-pages' },
+	nitro: {
+		preset: 'github-pages',
+		prerender: {
+			crawlLinks: true,
+			routes: ['/jugend/trainer-werden/', '/jugend/kinderschutz/'],
+		},
+	},
 
 	modules: [
 		'@nuxtjs/seo',
@@ -34,6 +40,7 @@ export default defineNuxtConfig({
 	},
 
 	image: {
+		provider: 'ipxStatic',
 		densities: [1, 2],
 		quality: 80,
 		format: ['avif', 'webp'],

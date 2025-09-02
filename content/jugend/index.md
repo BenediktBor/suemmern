@@ -26,6 +26,7 @@ features:
       to: /jugend/ausbildung/
 cta:
     icon: i-fluent-emoji-high-contrast-soccer-ball
+    trailingIcon: i-lucide-arrow-right
     label: Jetzt Probetraining sichern
     to: /jugend/probetraining/
 ---
@@ -134,10 +135,28 @@ description: |
     Bleib über unsere Jugendteams auf dem Laufenden!
 category: Jugend
 links:
+    - icon: i-lucide-instagram
+      ariaLabel: Instagram
+      to: https://www.instagram.com/sportfreunde_suemmern_jugend/
+      target: _blank
+      variant: subtle
+      color: neutral
+    - icon: i-lucide-facebook
+      ariaLabel: Facebook
+      to: https://www.facebook.com/sportfreunde.suemmern
+      target: _blank
+      variant: subtle
+      color: neutral
+    - icon: i-simple-icons-whatsapp
+      ariaLabel: WhatsApp
+      to: https://whatsapp.com/channel/0029VanrlOqDeON7QPi8XE3o
+      target: _blank
+      variant: subtle
+      color: neutral
     - label: Mehr Artikel
       trailingIcon: i-lucide-arrow-right
       to: /blog?category=Jugend
-      color: neutral
+      color: primary
       variant: subtle
 ---
 ::

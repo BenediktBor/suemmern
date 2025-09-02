@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const route = useRoute()
 
-const seoTitle = 'Sportfreunde Sümmern e.V.'
+const seoTitle = 'Sportfreunde Sümmern e.V. - Fußballverein in Iserlohn'
 const seoDescription =
 	'Fußball in Iserlohn: Die Sportfreunde Sümmern sind ein Breitensportverein mit Kinder-, Jugend- und Seniorenfußball. Jetzt Teil unserer Gemeinschaft werden!'
 useSeoMeta({

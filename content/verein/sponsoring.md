@@ -5,6 +5,6 @@ description: Kontakt unter sponsoring@sportfreunde-suemmern.de.
 icon: i-mdi-help-outline
 order: 6
 ---
-# Sponsor werden
+## Sponsor werden
 
-# Vielen Dank für eure Untersützung!
+## Vielen Dank für eure Untersützung!

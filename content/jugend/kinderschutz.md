@@ -18,7 +18,7 @@ Aus diesem Grund sind die Sportfreunde Sümmern aktiv präventiv tätig, um die 
 
 Unsere Jugendtrainer haben zu Beginn der Saison am Seminar "Prävention interpersoneller/sexualisierter Gewalt" des Landessportbundes Nordrhein-Westfalen teilgenommen und müssen regelmäßig ihr erweitertes Führungszeugnis vorzeigen.
 
-# Infomaterial
+## Infomaterial
 ::PageFeatures
 ---
 features:

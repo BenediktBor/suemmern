@@ -18,7 +18,7 @@ description: >
     Melde dich einfach bei uns – wir freuen uns darauf, dich schon bald auf dem Platz begrüßen zu dürfen.
 
 head:
-  title: Probetraining Fußball in Iserlohn
+  title: Probetraining Fußball in Iserlohn (Jugend/Frauen/Herren)
   description: >
     Jetzt Probetraining beim Fußballverein in Iserlohn sichern. Für Jugend, Senioren und Neueinsteiger – lerne die Sportfreunde Sümmern kennen und werde Teil unseres Teams!
 

@@ -19,18 +19,18 @@ features:
       description: Ob Einsteigerin, Einsteiger oder erfahren – bei uns findest du ein motiviertes Umfeld, in dem Freude am Fußball und die Förderung unserer Jugend im Mittelpunkt stehen.
 ---
 
-# Gemeinsam Talente fördern
+## Gemeinsam Talente fördern
 Ob als erfahrene Übungsleiterin, erfahrener Übungsleiter, Neueinsteigerin oder Neueinsteiger – wir möchten Menschen gewinnen, 
 die Begeisterung für den Fußball mitbringen und Kindern Werte wie Teamgeist, Fairness und Eigenverantwortung vermitteln. 
 Denn nur gemeinsam schaffen wir es, die sportliche und persönliche Entwicklung unserer Jugend langfristig zu fördern und unseren Verein weiter nach vorne zu bringen.
 
-## [Du]{.text-primary} bringst mit:
+### [Du]{.text-primary} bringst mit:
 
 - Leidenschaft & Verantwortungsbewusstsein
 - Freude am Umgang mit Kindern & Jugendlichen
 - Neugier und Lernwille – persönlich wie fachlich
 
-## [Wir]{.text-primary} bieten:
+### [Wir]{.text-primary} bieten:
 
 - Motiviertes und talentiertes Fußballteam
 - Engagiertes und lebendiges Vereinsumfeld

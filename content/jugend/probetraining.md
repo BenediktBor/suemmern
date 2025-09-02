@@ -7,7 +7,16 @@ image:
     src: /media/jugend/mannschaft-arm-in-arm.jpg
     alt: Jugendmannschaft Arm in Arm - Probetraining bei den Sportfreunden Sümmern
 description: |
-    Du möchtest Fußball bei einem Verein erleben, der Spaß, Entwicklung und Teamgeist in den Mittelpunkt stellt? Dann komm zu einem Probetraining bei den Sportfreunden Sümmern! Unsere Trainer fördern dich individuell, setzen auf moderne Methoden und schaffen viele Ballaktionen in kleinen Gruppen. So kannst du direkt ausprobieren, wie wir Fußball leben – mit Leidenschaft, Fairness und Freude am Spiel.
+    Du möchtest Fußball bei einem Verein erleben, der Spaß, Entwicklung und Teamgeist in den Mittelpunkt stellt? 
+    Dann komm zu einem Probetraining bei den Sportfreunden Sümmern! 
+    Unsere Trainer fördern dich individuell, setzen auf moderne Methoden und schaffen viele Ballaktionen in kleinen Gruppen. 
+    So kannst du direkt ausprobieren, wie wir Fußball leben – mit Leidenschaft, Fairness und Freude am Spiel.
+
+head:
+  title: Kinderfußball und Jugendfußball Probetraining in Iserlohn
+  description: >
+    Von Minikickern bis zur U19 - Jetzt Probetraining beim Fußballverein in Iserlohn sichern! Lerne die Sportfreunde Sümmern kennen und werde Teil unseres Teams!
+
 features: 
     - title: So bilden wir aus
       icon: i-lucide-sparkles
@@ -23,11 +32,11 @@ features:
       to: /verein/mitglied-werden
 ---
 
-# [Du]{.text-primary} möchtest Teil unserer Fußballfamilie werden?
+## [Du]{.text-primary} möchtest Teil unserer Fußballfamilie werden?
 
 Bei den Sportfreunden Sümmern bieten wir talentierten und motivierten Nachwuchsspielern die Möglichkeit, unser Team kennenzulernen und sich sportlich weiterzuentwickeln.
 
-# Was erwartet [dich]{.text-primary}?
+## Was erwartet [dich]{.text-primary}?
 
 ::PageFeatures
 ---
@@ -44,12 +53,12 @@ features:
 ---
 ::
 
-## Voraussetzungen für die Teilnahme
+### Voraussetzungen für die Teilnahme
 
 - **Altersgerechte Mannschaft:** Wir bieten Trainingsmöglichkeiten für verschiedene Altersklassen – von den [Minikickern bis zur U19](/teams?category=Jugend).
 - **Vereinszugehörigkeit:** Die Teilnahme am Probetraining ist nur mit schriftlicher Erlaubnis deines aktuellen Fußballvereins möglich.
 
-# So geht's weiter...
+## So geht's weiter...
 1. **Kontaktaufnahme:** Kontaktiere unseren sportlichen Leiter oder direkt einen [Ansprechpartner in deiner Altersklasse](/teams?category=Jugend).
 2. **Terminvereinbarung:** Gemeinsam finden wir einen passenden Termin für dein Probetraining.
 3. **Probetraining absolvieren:** Zeige dein Können und lerne unser Team sowie unsere Trainingsmethoden kennen.

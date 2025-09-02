@@ -1,6 +1,6 @@
 ---
 name: U17 Juniorinnen
-order: 13
+order: 102
 image: /media/teams/u17-juniorinnen.jpg
 category: Jugend
 league: Bezirksliga

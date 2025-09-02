@@ -4,6 +4,9 @@ order: 102
 image: /media/teams/u17-junioren.jpg
 category: Jugend
 league: Kreisliga
+age:
+  min: 15
+  max: 16
 description: |
     Die U17 Junioren der Sportfreunde Sümmern bieten Kindern im Alter von 15-16 Jahren die perfekte Möglichkeit, Fußball spielerisch zu lernen und sich sportlich weiterzuentwickeln.
     Unser Team trainiert in Iserlohn-Sümmern, zentral gelegen und schnell erreichbar aus Menden, Hemer und der Iserlohner Innenstadt.

@@ -74,42 +74,15 @@ watch([categoryFilter], () => refreshPosts())
 			</div>
 
 			<UPageGrid>
-				<UPageCard
+				<TeamCard
 					v-for="team in teams"
-					:header="team.name"
-					orientation="vertical"
-					:to="team.path"
-					spotlight
-				>
-					<template #title>
-						<div class="flex items-center gap-2">
-							<UBadge
-								:label="team.category"
-								variant="subtle"
-								size="lg"
-							/>
-							<h3
-								v-if="team.league"
-								class="text-primary font-semibold"
-							>
-								{{ team.league }}
-							</h3>
-						</div>
-
-						<h2 class="text-3xl font-bold mb-2 wrap-anywhere">
-							{{ team.name }}
-						</h2>
-					</template>
-					<NuxtImg
-						:src="team.image"
-						:alt="`Mannschaftsbild der ${team.name}`"
-						class="w-96 rounded-lg"
-						fit="cover"
-						:width="512"
-						:height="288"
-						:placeholder="[512, 288, 25, 5]"
-					/>
-				</UPageCard>
+					:key="team.id"
+					:name="team.name"
+					:league="team.league"
+					:image="team.image"
+					:path="team.path"
+					:category="team.category"
+				/>
 			</UPageGrid>
 		</UPageBody>
 	</UPage>

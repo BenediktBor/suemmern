@@ -103,6 +103,16 @@ content:
                   label: Uhrzeit
                   type: string
                   required: true
+          - name: age
+            label: Alter
+            type: object
+            fields:
+                - name: min
+                  label: Mindestens
+                  type: number
+                - name: max
+                  label: Maximal
+                  type: number
           - name: image
             label: Mannschaftsfoto
             type: image

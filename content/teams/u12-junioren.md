@@ -4,6 +4,9 @@ order: 106
 image: /media/teams/u12-junioren.jpg
 category: Jugend
 league: Kreisliga
+age:
+  min: 11
+  max: 11
 description: |
     Die U12 Junioren der Sportfreunde Sümmern bieten Kindern im Alter von 11 Jahren die perfekte Möglichkeit, Fußball spielerisch zu lernen und sich sportlich weiterzuentwickeln.
     Unser Team trainiert in Iserlohn-Sümmern, zentral gelegen und schnell erreichbar aus Menden, Hemer und der Iserlohner Innenstadt.

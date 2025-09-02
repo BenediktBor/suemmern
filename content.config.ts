@@ -112,6 +112,10 @@ export default defineContentConfig({
 				image: z.string().optional(),
 				league: z.string().optional(),
 				contactPersonsTitle: z.string().optional(),
+				age: z.object({
+					min: z.number().optional(),
+					max: z.number().optional(),
+				}),
 				practice: z
 					.array(
 						z.object({

@@ -4,6 +4,9 @@ order: 12
 image: '/media/teams/zweite-frauen.jpg'
 category: Frauen
 league: Bezirksliga
+age:
+  min: 18
+  max: null
 practice:
     - day: Mittwoch
       time: 19:45 Uhr - 21:15 Uhr

@@ -4,6 +4,9 @@ order: 4
 image: /media/teams/alt-stars.jpg
 category: Herren
 contactPersonsTitle: Deine Ansprechpartner
+age:
+  min: 30
+  max: null
 practice:
     - day: Mittwoch
       time: 20:00 Uhr - 21:30 Uhr

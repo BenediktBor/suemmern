@@ -4,6 +4,9 @@ order: 102
 image: /media/teams/u17-juniorinnen.jpg
 category: Jugend
 league: Bezirksliga
+age:
+  min: 15
+  max: 16
 practice:
     - day: Montag, Mittwoch & Freitag
       time: 18:15 Uhr - 19:45 Uhr

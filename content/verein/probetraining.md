@@ -39,6 +39,45 @@ cta:
   to: /verein/mitglied-werden/
 ---
 
+::TeamFinder
+---
+title: Finde dein Team
+headline: Gebe dein Alter an und finde heraus, welche Mannschaften für dich in Frage kommen
+description: >
+  Egal ob Jugend, Frauen, Herren oder Schiedsrichter – die Sportfreunde Sümmern sind für Fußball in Iserlohn vielfältig aufgestellt. 
+  Hier findest du alle Fußballabteilungen im Überblick und kannst mehr über unsere Teams, Aktivitäten und Verantwortlichen erfahren.
+image:
+    src: /media/der-verein.webp
+    alt: Bild der Seniorenspieler der Sportfreunde Sümmern - Fußball und Gemeinschaft in Iserlohn
+---
+
+::PageFeatures
+---
+features:
+  - icon: i-lucide-users
+    title: Herren
+    description: >
+      Unsere Herrenmannschaften – Fußball erleben, gemeinsam Spaß haben und Teil der Vereinsgemeinschaft sein
+    to: /teams?category=Herren
+  - icon: i-lucide-users
+    title: Frauen
+    description: >
+        Unsere Frauen- und Mädchenteams – gemeinsam spielen, Spaß haben und Teil unserer Vereinsfamilie sein
+    to: /teams?category=Frauen
+  - icon: i-carbon-pedestrian-child
+    title: Jugend
+    description: >
+      Unsere Jugendabteilung bietet Spiel, Spaß und Zusammenhalt für fußballbegeisterte Kinder in allen Altersklassen
+    to: /jugend/
+  - icon: i-mdi-whistle-outline
+    title: Schiedsrichter
+    description: >
+        Unsere Schiedsrichter – werde Teil unseres Teams und erlebe Fußball aus einer neuen Perspektive
+    to: /verein/schiedsrichter/
+---
+::
+::
+
 ::PageSection
 ---
 title: Fußball und Gemeinschaft in Sümmern
@@ -175,39 +214,4 @@ items:
 ---
 ::
 
-::
-
-::PageHeader
----
-headline: Für jede Spielerin und jeden Spieler das richtige Angebot
-title: Finde dein Probetraining
-description: >
-  Egal ob Jugend, Frauen, Herren oder Schiedsrichter – die Sportfreunde Sümmern sind vielfältig aufgestellt. 
-  Hier findest du alle Fußballabteilungen im Überblick und kannst mehr über unsere Teams, Aktivitäten und Verantwortlichen erfahren.
----
-::
-::PageFeatures
----
-features:
-  - icon: i-lucide-users
-    title: Herren
-    description: >
-      Unsere Herrenmannschaften – Fußball erleben, gemeinsam Spaß haben und Teil der Vereinsgemeinschaft sein
-    to: /teams?category=Herren
-  - icon: i-lucide-users
-    title: Frauen
-    description: >
-        Unsere Frauen- und Mädchenteams – gemeinsam spielen, Spaß haben und Teil unserer Vereinsfamilie sein
-    to: /teams?category=Frauen
-  - icon: i-carbon-pedestrian-child
-    title: Jugend
-    description: >
-      Unsere Jugendabteilung bietet Spiel, Spaß und Zusammenhalt für fußballbegeisterte Kinder in allen Altersklassen
-    to: /jugend/
-  - icon: i-mdi-whistle-outline
-    title: Schiedsrichter
-    description: >
-        Unsere Schiedsrichter – werde Teil unseres Teams und erlebe Fußball aus einer neuen Perspektive
-    to: /verein/schiedsrichter/
----
 ::

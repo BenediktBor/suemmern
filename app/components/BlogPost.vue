@@ -24,7 +24,17 @@ const excerpt = computed(() => {
 	<UBlogPost
 		:title="props.title"
 		:date="props.date"
-		:image="props.image ?? '/logo.png'"
+		:image="
+			{
+				src: props.image ?? '/logo.png',
+				width: 512,
+				height: 288,
+				alt: props.title,
+				fit: 'cover',
+				placeholder: [512, 288, 25, 5],
+				loading: 'lazy',
+			} as any
+		"
 		:to="props.to"
 		:description="excerpt"
 		:badge="props.badge"

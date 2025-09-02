@@ -178,6 +178,17 @@ const items = computed<NavigationMenuItem[]>(() => [
 			route.query.category === 'Sonstige',
 	},
 ])
+
+const hideCTA = computed(() => {
+	return [
+		'/verein/probetraining/',
+		'/verein/probetraining',
+		'/verein/mitglied-werden/',
+		'/verein/mitglied-werden',
+		'/jugend/probetraining/',
+		'/jugend/probetraining',
+	].includes(route.path)
+})
 </script>
 
 <template>
@@ -222,8 +233,8 @@ const items = computed<NavigationMenuItem[]>(() => [
 		</template>
 
 		<template #right>
-			<UColorModeButton />
 			<UButton
+				v-if="!hideCTA"
 				class="hidden lg:inline-flex"
 				variant="subtle"
 				icon="i-fluent-emoji-high-contrast-soccer-ball"
@@ -231,6 +242,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 				label="Probetraining"
 				to="/verein/probetraining/"
 			/>
+			<UColorModeButton />
 		</template>
 	</UHeader>
 </template>

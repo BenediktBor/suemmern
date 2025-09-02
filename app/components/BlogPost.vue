@@ -30,6 +30,7 @@ const excerpt = computed(() => {
 				width: 512,
 				height: 288,
 				alt: props.title,
+				format: 'webp',
 				fit: 'cover',
 				placeholder: [512, 288, 25, 5],
 				loading: 'lazy',

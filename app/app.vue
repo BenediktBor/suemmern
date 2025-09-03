@@ -1,9 +1,11 @@
 <script setup lang="ts">
+import { de } from '@nuxt/ui/locale'
+
 const route = useRoute()
 </script>
 
 <template>
-	<UApp locale="de">
+	<UApp :locale="de">
 		<AppHeader />
 
 		<UMain>

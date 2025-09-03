@@ -19,6 +19,7 @@ export default defineNuxtConfig({
 		'@nuxt/content',
 		'@nuxtjs/mdc',
 		'@nuxt/image',
+		'@nuxtjs/i18n',
 	],
 
 	app: {
@@ -30,6 +31,14 @@ export default defineNuxtConfig({
 			},
 		},
 	},
+	i18n: {
+		defaultLocale: 'de',
+		locales: [
+			{
+				code: 'de',
+			},
+		],
+	},
 	site: {
 		url: 'https://benediktbor.github.io/suemmern/',
 		name: 'Sportfreunde Sümmern e.V.',
@@ -40,7 +49,6 @@ export default defineNuxtConfig({
 	},
 
 	image: {
-		provider: 'ipxStatic',
 		densities: [1, 2],
 		quality: 80,
 		format: ['avif', 'webp'],

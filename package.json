@@ -9,6 +9,9 @@
 		"preview": "nuxt preview",
 		"postinstall": "nuxt prepare"
 	},
+	"overrides": {
+		"vite": "npm:rolldown-vite@latest"
+	},
 	"dependencies": {
 		"@nuxt/content": "^3.6.3",
 		"@nuxt/image": "^1.11.0",
@@ -18,7 +21,7 @@
 		"@nuxtjs/seo": "^3.1.0",
 		"@unhead/vue": "^2.0.14",
 		"better-sqlite3": "^12.2.0",
-		"nuxt": "^4.0.3",
+		"nuxt": "^4.1.0",
 		"typescript": "^5.9.2",
 		"vue": "^3.5.18",
 		"vue-router": "^4.5.1"

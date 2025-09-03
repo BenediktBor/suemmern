@@ -32,6 +32,7 @@ export default defineNuxtConfig({
 		},
 	},
 	i18n: {
+		baseUrl: 'https://benediktbor.github.io/suemmern/',
 		defaultLocale: 'de',
 		locales: [
 			{

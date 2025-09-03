@@ -18,6 +18,11 @@ features:
       description: >
         Ihr habt Fragen oder möchtet mehr über Sponsoring-Möglichkeiten erfahren? 
         Kontaktiert uns gerne per E-Mail unter sponsoring@sportfreunde-suemmern.de!
+    - icon: i-lucide-pin
+      title: Azubiwand
+      description: >
+        Mit einem Eintrag auf unserer Azubiwand erreicht ihr motivierte Jugendliche aus der Region – und zeigt gleichzeitig euer Engagement für den Nachwuchs.
+      to: /verein/azubiwand/
     - icon: i-mdi-help-outline
       title: Sponsor werden
       description: >

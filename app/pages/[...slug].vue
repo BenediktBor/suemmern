@@ -104,7 +104,7 @@ const breadcrumbs = computed(() => {
 						class="pt-4 grid-cols-1"
 						:class="{
 							'sm:grid-cols-2 lg:grid-cols-2':
-								page.features.length === 2,
+								page.features.length <= 2,
 							'sm:grid-cols-3 lg:grid-cols-3':
 								page.features.length > 2,
 						}"

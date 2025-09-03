@@ -9,7 +9,7 @@ components:
         type: select
         required: true
         options:
-            values: [Verein, Jugend, Herren, Frauen, Sonstige]
+            values: [Verein, Sponsoring, Jugend, Herren, Frauen, Sonstige]
 content:
     - name: blog
       label: Blog Post

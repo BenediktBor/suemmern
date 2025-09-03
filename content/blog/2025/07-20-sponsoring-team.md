@@ -6,7 +6,7 @@ description: |
     meldet euch gerne per Mail unter sponsoring@sportfreunde-suemmern.de.
 
 date: 2025-06-20
-category: 'Verein'
+category: Sponsoring
 
 images: 
     - src: /media/blog/2025/sponsoring-team.jpg

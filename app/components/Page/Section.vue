@@ -7,6 +7,7 @@ const props = defineProps<{
 	headline?: string
 	description?: string
 	image?: { src: string; alt: string; portrait?: boolean }
+	id?: string
 	list?: PageFeatureProps[]
 	links?: ButtonProps[]
 }>()
@@ -21,6 +22,7 @@ const props = defineProps<{
 		:ui="{ root: 'border-0' }"
 		:links="props.links"
 		:features="props.list?.map((f) => ({ ...f, variant: 'outline' }))"
+		:id="props.id"
 	>
 		<template #description>
 			<slot name="default">{{ props.description }}</slot>

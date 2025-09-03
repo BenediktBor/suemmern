@@ -2,7 +2,7 @@
 const props = defineProps<{
 	name: string
 	image?: string
-	position?: string
+	position?: string | boolean
 	badge?: string
 	phone?: string
 	mail?: string

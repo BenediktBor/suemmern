@@ -25,7 +25,7 @@ list:
       description: Du sollst auf dem Platz Verantwortung übernehmen und deine eigenen Entscheidungen treffen.
     - image: 
         icon: i-mdi-soccer
-      description: Bei uns trainierst du in kleinen Mannschaften, damit du viele Ballaktionen hast und große Entwicklungssprünge machst.
+      description: Du kommst zu uns, um Fußball zu spielen, nicht um ihn zu üben. Deshalb spielen wir im Training viel Fußball in wechselnden Spielformaten.
     - image: 
         icon: i-lucide-footprints
       description: Bei uns trainierst du in kleinen Mannschaften, damit du viele Ballaktionen hast und große Entwicklungssprünge machst.

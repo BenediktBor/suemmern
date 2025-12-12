@@ -27,7 +27,7 @@ image:
 description: |
     Wir sind mehr als nur ein Fußballverein. Mit über 800 Mitgliedern und mehr als 20 Mannschaften stehen wir für Leidenschaft, Zusammenhalt und Tradition. Bei uns wachsen Kinder gemeinsam auf, entwickeln sich sportlich und menschlich – und finden Freunde fürs Leben. Ob Bambinis, Jugend, Senioren oder Alte Herren: Alle Generationen tragen dazu bei, dass unser Verein seit fast 70 Jahren fest im Dorf verwurzelt ist.
 list:
-    - title: X+ Mitglieder
+    - title: 800+ Mitglieder
       icon: i-lucide-smile
     - title: 20+ Mannschaften
       icon: i-heroicons-user-group

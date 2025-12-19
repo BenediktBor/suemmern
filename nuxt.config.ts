@@ -11,6 +11,13 @@ export default defineNuxtConfig({
 			routes: ['/', '/jugend/trainer-werden/', '/jugend/kinderschutz/'],
 		},
 	},
+	routeRules: {
+		// Banner on our football pitch links to this URL so we should keep it alive
+		'/junioren/fu%C3%9Fballerische-ausbildung/leitlinien/': {
+			redirect: '/jugend/ausbildung/leitlinien',
+		},
+		'/junioren/**': { redirect: '/jugend/**' },
+	},
 
 	modules: [
 		'@nuxtjs/seo',

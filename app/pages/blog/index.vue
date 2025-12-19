@@ -18,7 +18,7 @@ const { data: teams } = await useAsyncData(`${route.path}.teams`, () => {
 })
 
 const { data: totalPosts, refresh: refreshPostCount } = await useAsyncData(
-	`${route.path}.totalPosts`,
+	`${route.path}.${categoryFilter.value}.${teamFilter.value}.totalPosts`,
 	() => {
 		const builder = queryCollection('blog')
 		if (categoryFilter.value) {
@@ -37,7 +37,7 @@ const totalPages = computed(() =>
 )
 
 const { data: posts, refresh: refreshPosts } = await useAsyncData(
-	`${route.path}.posts`,
+	`${route.path}.${categoryFilter.value}.${teamFilter.value}.posts`,
 	() => {
 		const builder = queryCollection('blog')
 			.order('date', 'DESC')

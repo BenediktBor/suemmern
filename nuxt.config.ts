@@ -20,6 +20,7 @@ export default defineNuxtConfig({
 		'@nuxtjs/mdc',
 		'@nuxt/image',
 		'@nuxtjs/i18n',
+		'nuxt-studio',
 	],
 
 	app: {
@@ -58,6 +59,15 @@ export default defineNuxtConfig({
 	content: {
 		experimental: {
 			// sqliteConnector: 'native',
+		},
+	},
+	studio: {
+		route: '/admin',
+		repository: {
+			provider: 'github',
+			owner: 'benediktbor',
+			repo: 'suemmern',
+			branch: 'main',
 		},
 	},
 })

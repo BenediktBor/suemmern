@@ -51,7 +51,11 @@ const { data: persons } = useAsyncData(
 				:name="person.name"
 				:position="props.names[index]?.as ?? person?.position"
 				:image="person.image"
-				:badge="props.names[index]?.badge ?? person?.badge"
+				:badge="
+					props.names[index]?.badge !== undefined
+						? props.names[index]?.badge
+						: person?.badge
+				"
 				:phone="person.phone"
 				:mail="person.mail"
 			/>

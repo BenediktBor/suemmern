@@ -42,7 +42,7 @@ watch(
 			:name="contact.name"
 			:position="props.as ?? contact.position"
 			:image="contact.image"
-			:badge="props.badge ?? contact.badge"
+			:badge="props.badge !== undefined ? props.badge : contact.badge"
 			:phone="contact.phone"
 			:mail="contact.mail"
 		/>

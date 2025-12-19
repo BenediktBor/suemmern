@@ -41,7 +41,7 @@ watch(
 				:name="person.name"
 				:position="person?.position"
 				:image="person.image"
-				:badge="props.badge ?? person.badge"
+				:badge="props.badge !== undefined ? props.badge : person.badge"
 				:phone="person.phone"
 				:mail="person.mail"
 				:since="person.since"

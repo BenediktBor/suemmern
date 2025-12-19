@@ -8,7 +8,7 @@ export default defineNuxtConfig({
 		preset: 'github-pages',
 		prerender: {
 			crawlLinks: true,
-			routes: ['/jugend/trainer-werden/', '/jugend/kinderschutz/'],
+			routes: ['/', '/jugend/trainer-werden/', '/jugend/kinderschutz/'],
 		},
 	},
 

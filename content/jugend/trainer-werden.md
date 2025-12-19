@@ -81,13 +81,14 @@ description: |
 
 ::PersonContact
 ---
-name: Peter Kostrzewa
-as: Sportlicher Leiter
+name: Benedikt Bornemann
+as: Sportliche Entwicklung
+badge: null
 reverse: true
 section:
     title: Dein Ansprechpartner
     headline: Persönlich für dich da
     description: |
-        Unser sportlicher Leiter ist dein direkter Ansprechpartner für alles rund ums Trainerwerden bei den Sportfreunden Sümmern. Er beantwortet deine Fragen, unterstützt dich bei den ersten Schritten und steht dir persönlich mit Rat und Erfahrung zur Seite. 
+        Unser Leiter für Sportliche Entwicklung ist dein direkter Ansprechpartner für alles rund ums Trainerwerden bei den Sportfreunden Sümmern. Er beantwortet deine Fragen, unterstützt dich bei den ersten Schritten und steht dir persönlich mit Rat und Erfahrung zur Seite. 
 ---
 ::

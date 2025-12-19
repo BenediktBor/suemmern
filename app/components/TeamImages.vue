@@ -8,7 +8,7 @@ const props = defineProps<{
 }>()
 
 const { data: teams, refresh } = useAsyncData(
-	'teamImagesAutoScroller',
+	`teamImagesAutoScroller?category=${props.category ?? 'all'}`,
 	async () => {
 		const queryBuilder = queryCollection('teams')
 

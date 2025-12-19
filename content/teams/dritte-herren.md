@@ -2,7 +2,7 @@
 name: 3. Herren
 order: 3
 image: /media/teams/dritte-herren.jpg
-category: Herren
+category: Senioren
 league: Kreisliga C
 age:
   min: 18

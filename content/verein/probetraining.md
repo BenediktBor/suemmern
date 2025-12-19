@@ -52,15 +52,10 @@ description: >
 ---
 features:
   - icon: i-lucide-users
-    title: Herren
+    title: Senioren
     description: >
-      Unsere Herrenmannschaften – Fußball erleben, gemeinsam Spaß haben und Teil der Vereinsgemeinschaft sein
-    to: /teams?category=Herren
-  - icon: i-lucide-users
-    title: Frauen
-    description: >
-        Unsere Frauen- und Mädchenteams – gemeinsam spielen, Spaß haben und Teil unserer Vereinsfamilie sein
-    to: /teams?category=Frauen
+      Unsere Frauen- und Herrenmannschaften – Fußball erleben, gemeinsam Spaß haben und Teil der Vereinsgemeinschaft sein
+    to: /senioren/
   - icon: i-carbon-pedestrian-child
     title: Jugend
     description: >

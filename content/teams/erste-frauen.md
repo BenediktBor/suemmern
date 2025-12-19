@@ -2,7 +2,7 @@
 name: 1. Frauen
 order: 11
 image: /media/teams/erste-frauen.jpg
-category: Frauen
+category: Senioren
 league: Landesliga
 age:
   min: 18

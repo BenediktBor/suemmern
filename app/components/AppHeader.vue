@@ -75,6 +75,27 @@ const youthPages = computed(() => {
 				})),
 		}))
 })
+const seniorenPages = computed(() => {
+	const seniorenSection = pages.value.find(
+		(page) => page.path === '/senioren'
+	)?.children
+	if (!seniorenSection) return []
+
+	return seniorenSection
+		.filter((page) => page.path.startsWith('/senioren/'))
+		.map((page) => ({
+			label: page.title,
+			to: page.path,
+			icon: page.icon,
+			children: page.children
+				?.filter((subpage) => subpage.path !== page.path)
+				.map((subpage) => ({
+					label: subpage.title,
+					to: subpage.path,
+					icon: subpage.icon,
+				})),
+		}))
+})
 
 const items = computed<NavigationMenuItem[]>(() => [
 	{
@@ -108,35 +129,30 @@ const items = computed<NavigationMenuItem[]>(() => [
 	{
 		label: 'Senioren',
 		icon: 'i-lucide-users',
-		active:
-			route.path.endsWith('/teams') &&
-			route.query.category === 'Senioren',
+		to: '/senioren',
 		children: [
 			{
-				label: 'Herren Teams',
+				label: 'Aktuelles',
+				icon: 'i-heroicons-newspaper',
+				to: '/blog?category=Senioren',
+				active:
+					route.path.endsWith('/blog') &&
+					route.query.category === 'Senioren',
+			},
+			{
+				label: 'Teams',
 				icon: 'i-heroicons-user-group',
-				to: '/teams?category=Herren',
+				to: '/teams?category=Senioren',
 				active:
 					route.path.endsWith('/teams') &&
-					route.query.category === 'Herren',
+					route.query.category === 'Senioren',
 
 				children: (teams.value?.seniorMale ?? []).map((team) => ({
 					label: team.name,
 					to: team.path,
 				})),
 			},
-			{
-				label: 'Frauen Teams',
-				icon: 'i-heroicons-user-group',
-				to: '/teams?category=Frauen',
-				active:
-					route.path.endsWith('/teams') &&
-					route.query.category === 'Frauen',
-				children: (teams.value?.female ?? []).map((team) => ({
-					label: team.name,
-					to: team.path,
-				})),
-			},
+			...seniorenPages.value,
 		],
 	},
 

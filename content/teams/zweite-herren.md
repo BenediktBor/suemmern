@@ -2,7 +2,7 @@
 name: 2. Herren
 order: 2
 image: '/media/teams/zweite-herren.jpg'
-category: Herren
+category: Senioren
 league: 'Kreisliga B'
 age:
   min: 18

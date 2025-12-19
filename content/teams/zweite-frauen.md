@@ -2,7 +2,7 @@
 name: 2. Frauen
 order: 12
 image: '/media/teams/zweite-frauen.jpg'
-category: Frauen
+category: Senioren
 league: Bezirksliga
 age:
   min: 18

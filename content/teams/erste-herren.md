@@ -2,7 +2,7 @@
 name: 1. Herren
 order: 1
 image: /media/teams/erste-herren.jpg
-category: Herren
+category: Senioren
 league: Kreisliga A
 age:
   min: 18

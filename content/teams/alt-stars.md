@@ -2,7 +2,7 @@
 name: Alt Stars
 order: 4
 image: /media/teams/alt-stars.jpg
-category: Herren
+category: Senioren
 contactPersonsTitle: Deine Ansprechpartner
 age:
   min: 30

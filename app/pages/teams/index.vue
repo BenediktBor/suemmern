@@ -51,7 +51,7 @@ watch([categoryFilter], () => refreshPosts())
 					class="w-64"
 					:required="false"
 					placeholder="Team auswählen..."
-					:items="['Herren', 'Frauen', 'Jugend', 'Sonstige']"
+					:items="['Senioren', 'Jugend', 'Sonstige']"
 					:modelValue="categoryFilter"
 					@update:modelValue="
 						(val: string) => navigateTo(`/teams?category=${val}`)

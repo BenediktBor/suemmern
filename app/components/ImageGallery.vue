@@ -36,7 +36,7 @@ props.images.forEach(({ src }) => {
 			/>
 
 			<template #body>
-				<NuxtImg
+				<img
 					:src="image.src"
 					:alt="image.alt"
 					class="w-full h-full object-contain"

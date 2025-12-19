@@ -4,18 +4,14 @@ import type { NavigationMenuItem } from '@nuxt/ui/components/NavigationMenu.vue'
 const route = useRoute()
 
 const { data } = await useAsyncData('navigationData', async () => {
-	const [youth, seniorMale, female, pages] = await Promise.all([
+	const [youth, senior, pages] = await Promise.all([
 		queryCollection('teams')
 			.order('order', 'ASC')
 			.where('category', '=', 'Jugend')
 			.all(),
 		queryCollection('teams')
 			.order('order', 'ASC')
-			.where('category', '=', 'Herren')
-			.all(),
-		queryCollection('teams')
-			.order('order', 'ASC')
-			.where('category', '=', 'Frauen')
+			.where('category', '=', 'Senioren')
 			.all(),
 		queryCollectionNavigation('pages', ['icon', 'order']).order(
 			'order',
@@ -25,8 +21,7 @@ const { data } = await useAsyncData('navigationData', async () => {
 
 	return {
 		youth,
-		seniorMale,
-		female,
+		senior,
 		pages,
 	}
 })
@@ -34,8 +29,7 @@ const teams = computed(() =>
 	data.value
 		? {
 				youth: data.value.youth,
-				seniorMale: data.value.seniorMale,
-				female: data.value.female,
+				senior: data.value.senior,
 			}
 		: null
 )
@@ -147,7 +141,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 					route.path.endsWith('/teams') &&
 					route.query.category === 'Senioren',
 
-				children: (teams.value?.seniorMale ?? []).map((team) => ({
+				children: (teams.value?.senior ?? []).map((team) => ({
 					label: team.name,
 					to: team.path,
 				})),

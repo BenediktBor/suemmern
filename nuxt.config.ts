@@ -17,6 +17,7 @@ export default defineNuxtConfig({
 			redirect: '/jugend/ausbildung/leitlinien',
 		},
 		'/junioren/**': { redirect: '/jugend/**' },
+		'/verein': { redirect: '/' },
 	},
 
 	modules: [

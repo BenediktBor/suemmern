@@ -8,76 +8,58 @@ const headerImage = computed(() => page.value.images?.[0])
 </script>
 
 <template>
-	<UPage>
-		<div
-			v-if="page"
-			class="grid grid-flow-row-dense grid-cols-1 lg:grid-cols-3 lg:grid-rows-1 gap-y-8 lg:gap-x-8"
+	<UPage class="max-w-4xl mx-auto">
+		<UPageHeader
+			:title="page.title"
+			:headline="page.headline"
+			:links="page.links"
 		>
-			<div v-if="headerImage" class="grid">
-				<NuxtImg
-					:src="headerImage.src"
-					:alt="headerImage.alt"
-					fit="cover"
-					:width="headerImage.width ?? 512"
-					:height="headerImage.height ?? 288"
-					:placeholder="[
-						headerImage.width ?? 512,
-						headerImage.height ?? 288,
-						25,
-						5,
-					]"
-					class="place-self-center mt-4 w-full object-cover rounded-lg shadow-2xl"
-				/>
-			</div>
-
-			<UPageHeader
-				:class="{
-					'col-span-2': !!headerImage,
-					'col-span-3': !headerImage,
-				}"
-				:title="page.title"
-				:headline="page.headline"
-				:links="page.links"
-			>
-				<template #default>
-					<!-- <UBreadcrumb
+			<template #default>
+				<!-- <UBreadcrumb
 						v-if="breadcrumbs.length > 1"
 						class="my-2"
 						:items="breadcrumbs"
 					/> -->
-					<div class="my-2 flex gap-2 items-center">
-						<NuxtLink
-							v-if="page.category"
-							:to="`/blog?category=${page.category}`"
-						>
-							<UBadge :label="page.category" variant="subtle" />
-						</NuxtLink>
-						<NuxtLink
-							v-if="page.team"
-							:to="`/teams/${page.team.toLowerCase().replace(' ', '-')}`"
-						>
-							<UBadge :label="page.team" variant="subtle" />
-						</NuxtLink>
-
-						<time>{{ page.date }}</time>
-					</div>
-
-					<p
-						v-if="page.description"
-						class="text-lg text-pretty text-muted mt-4"
+				<div class="my-2 flex gap-2 items-center">
+					<NuxtLink
+						v-if="page.category"
+						:to="`/blog?category=${page.category}`"
 					>
-						{{ page.description }}
-					</p>
-				</template>
-			</UPageHeader>
-		</div>
+						<UBadge :label="page.category" variant="subtle" />
+					</NuxtLink>
+					<NuxtLink
+						v-if="page.team"
+						:to="`/teams/${page.team.toLowerCase().replace(' ', '-')}`"
+					>
+						<UBadge :label="page.team" variant="subtle" />
+					</NuxtLink>
+
+					<time>{{ page.date }}</time>
+				</div>
+
+				<p
+					v-if="page.description"
+					class="text-lg text-pretty text-muted mt-4"
+				>
+					{{ page.description }}
+				</p>
+			</template>
+		</UPageHeader>
 
 		<UPageBody v-if="page">
-			<ContentRenderer :value="page" />
-			<ImageGallery
-				v-if="page.images && page.images.length > 1"
-				:images="page.images"
-			/>
+			<UCarousel
+				v-if="page.images"
+				v-slot="{ item }"
+				:dots="page.images.length > 1"
+				:arrows="page.images.length > 1"
+				:items="page.images"
+				class="my-2 w-full max-w-2xl mx-auto"
+				:ui="{ item: 'grid place-items-center' }"
+			>
+				<NuxtImg :src="item.src" :alt="item.alt" class="rounded-lg" />
+			</UCarousel>
+
+			<ContentRenderer class="pt-4" :value="page" />
 		</UPageBody>
 		<ErrorPage v-else />
 	</UPage>

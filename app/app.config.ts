@@ -14,6 +14,11 @@ export default defineAppConfig({
 				footer: 'm-2 min-w-0 flex-1 grow-0 flex',
 			},
 		},
+		pageHeader: {
+			slots: {
+				root: 'border-none',
+			},
+		},
 		pageSection: {
 			variants: {
 				orientation: {

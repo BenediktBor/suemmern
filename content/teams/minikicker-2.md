@@ -1,7 +1,7 @@
 ---
 name: Minikicker 2
 order: 113
-image: /media/teams/minikicker.jpg
+image: /media/teams/minikicker-2.jpg
 category: Jugend
 league: Kreisliga
 age:

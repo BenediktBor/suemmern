@@ -57,8 +57,8 @@ names:
 ---
 title: Abteilungen
 names:
-    - name: Peter Kostrzewa
-      as: Jugend
+    - name: Thomas Rott
+      as: Jugendleiter
       badge: false
     - name: Jörg Dorstmann
       as: Alt Stars

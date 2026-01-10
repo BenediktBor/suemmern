@@ -40,7 +40,7 @@ const breadcrumbs = computed(() => {
 	<UPage>
 		<div
 			v-if="page"
-			class="grid grid-flow-row-dense grid-cols-1 lg:grid-cols-3 lg:grid-rows-1 gap-y-8 lg:gap-x-8 pb-4 border-b border-default"
+			class="grid grid-flow-row-dense grid-cols-1 lg:grid-cols-3 lg:grid-rows-1 gap-y-8 lg:gap-x-8 pb-4"
 		>
 			<div v-if="page.image" class="mt-8 grid">
 				<div class="w-full place-self-center">
@@ -75,14 +75,15 @@ const breadcrumbs = computed(() => {
 
 			<UPageHeader
 				:class="{
-					'border-none': true,
 					'col-span-2': !!page.image,
 					'col-span-3': !page.image,
 				}"
 				:title="page.title"
 				:headline="page.headline"
 				:links="page.links"
-				:ui="{ container: 'flex flex-col h-full' }"
+				:ui="{
+					container: 'flex flex-col h-full',
+				}"
 			>
 				<template #default>
 					<UBreadcrumb

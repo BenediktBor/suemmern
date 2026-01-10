@@ -178,3 +178,27 @@ headline: Events, Spielbericht und andere Neuigkeiten zu unseren Jugendteams
 title: Aktuelles
 ---
 ::
+
+::person-contact
+---
+badge: null
+section:
+  title: Dein Ansprechpartner
+  headline: Persönlich für dich da
+  description: >
+    Unser Jugendleiter steht dir bei allen Fragen rund ums Probetraining und
+    deine fußballerische Entwicklung direkt zur Verfügung. Kontaktiere ihn gerne
+    – er hilft dir weiter und begleitet dich auf deinem Weg zu den Sportfreunden
+    Sümmern. Die direkten Ansprechpartner für deine Altersklasse findest du
+    direkt auf den jeweiligen Teamseiten.
+  links:
+    - label: Weitere Ansprechpartner
+      icon: i-lucide-user
+      trailingIcon: i-lucide-arrow-right
+      to: /teams?category=Jugend
+      color: primary
+      variant: subtle
+as: Jugendleiter
+name: Thomas Rott
+---
+::
